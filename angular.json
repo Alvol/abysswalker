@@ -16,6 +16,7 @@
         "@schematics/angular:component": {
           "changeDetection": "OnPush",
           "displayBlock": true,
+          "skipTests": true,
           "style": "scss"
         }
       },

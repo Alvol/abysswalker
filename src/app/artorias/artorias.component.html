@@ -1,4 +1,9 @@
 <ng-content></ng-content>
 <p style="color: yellow">My name is death!</p>
-<img (click)="saltuxa()" [class.saltuxa]="saltuxaInProgress" class="avatar" src="../../assets/artorias.png" alt="artorias">
+<img class="avatar"
+ [class.saltuha]="saltuhaInProgress"
+ [src]="Assets.Artorias"
+ alt="artorias"
+ (click)="saltuha()"
+ (transitionend)="onSaltuhaFinished()">
 <span class="krasiviySpan">{{currentLocation}}</span>

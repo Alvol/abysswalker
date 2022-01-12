@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+.avatar {
+  width: 100%;
+  transition: none;
+  cursor: pointer;
+}
+
+.krasiviySpan {
+color: yellow;
+}
+
+.saltuha {
+  transition: transform 2000ms;
+  transform: rotateZ(-360deg);
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 0 0.75rem #233057);
+}
+

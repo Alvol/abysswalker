@@ -1,16 +1,19 @@
 import { Component } from '@angular/core';
 
+import { Assets } from './const/assets';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  counter = 0;
-  title = 'firelink shrine';
+  public counter: number = 0;
+  public title: string = 'firelink shrine';
+  public Assets = Assets;
 
-  public saltuxaListener() {
-    this.counter = this.counter + 1;
+  public saltuhaListener() {
+    this.counter++;
   }
 }
 

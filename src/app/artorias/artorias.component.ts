@@ -1,26 +1,40 @@
-import {Component, OnInit, ChangeDetectionStrategy, Input, Output, EventEmitter} from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
+
+import { Assets } from '../const/assets';
 
 @Component({
   selector: 'app-artorias',
   templateUrl: './artorias.component.html',
-  styleUrls: ['./artorias.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./artorias.component.scss'],
 })
 
 export class ArtoriasComponent implements OnInit {
   @Input() currentLocation: string | undefined;
-  public saltuxaInProgress: boolean = false;
-  @Output() vertuwka: EventEmitter<any> = new EventEmitter();
+  @Output() vertushka: EventEmitter<void> = new EventEmitter();
+
+  public saltuhaInProgress: boolean = false;
+  public rotation: number = 0;
+  public Assets = Assets;
 
   constructor() {
   }
 
-  public saltuxa() {
-    this.vertuwka.emit();
-    this.saltuxaInProgress = !this.saltuxaInProgress;
+  public saltuha() {
+    this.vertushka.emit();
+    this.saltuhaInProgress = !this.saltuhaInProgress
   }
 
   ngOnInit(): void {
+  }
+
+  public onSaltuhaFinished(): void {
+    this.saltuhaInProgress = false;
   }
 
 }
