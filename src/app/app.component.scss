@@ -18,10 +18,25 @@
 
   .firekeeper {
     position: absolute;
-    bottom: 28%;
+    bottom: 45%;
     left: 16%;
-    width: 64px;
+    img{
+      width: 64px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .artorias {
+    position: absolute;
+    bottom: 45%;
+    left: 65%;
+    width: 205px;
     height: auto;
     object-fit: contain;
+  }
+
+  span{
+    color: yellow;
   }
 }

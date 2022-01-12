@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'abyssWalk';
+  counter = 0;
+  title = 'firelink shrine';
+
+  public saltuxaListener() {
+    this.counter = this.counter + 1;
+  }
 }
+
